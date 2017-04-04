@@ -27,7 +27,7 @@ angular.module('App', ['ionic'])
 
 
 	//reservation
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/tour');
 })
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

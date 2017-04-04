@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="starter">
+
+    <!--
+        <div class='bar bar-header'>
+            <h1 class='title'>基本行与列CSS类</h1>
+        </div>
+
+        <div class='scroll-content has-header'>
+            <div class="row">
+                <div class='col-90' style='border:solid 1px red;'>第一行第1列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第2列</div>
+            </div>
+
+            <div class="row">
+                <div class='col' style='border:solid 1px red;'>第一行第1列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第2列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第3列</div>
+            </div>
+
+            <div class="row">
+                <div class='col' style='border:solid 1px red;'>第一行第1列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第2列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第3列</div>
+                <div class='col' style='border:solid 1px red;'>第一行第3列</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col col-10" style='border:solid 1px red;'>.col-10</div>
+                <div class="col col-20" style='border:solid 1px red;'>.col-20</div>
+                <div class="col col-50" style='border:solid 1px red;'>.col-50</div>
+                <div class="col col-20" style='border:solid 1px red;'>.col-20</div>
+            </div>
+
+
+             <div class="row">
+                <div class="col col-33" style='border:solid 1px red;'>.col-33</div>
+                <div class="col col-66" style='border:solid 1px red;'>.col-66</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col col-30" style='border:solid 1px red;'>.col-30</div>
+                <div class="col col-20" style='border:solid 1px red;'>.col-20</div>
+                <div class="col" style='border:solid 1px red;'>未设置比例</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-618" style='border:solid 1px red;'>.col-618</div>
+                <div class="col col-382" style='border:solid 1px red;'>.col-382</div>
+            </div>
+
+
+             <div class="row">
+                <div class="col col-10" style='border:solid 1px red;'>.col-10</div>
+                <div class="col col-50" style='border:solid 1px red;'>.col-50</div>
+                <div class="col col-66" style='border:solid 1px red;'>.col-66</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-10" style='border:solid 1px red;'>.col-10</div>
+                <div class="col col-50" style='border:solid 1px red;'>.col-50</div>
+            </div>
+
+            <div class='row'>
+                <div class='col col-50' style='border:solid 1px red;'>
+                    <a class='button ion-ios-telephone' style='font-size:128px;text-align:center;'></a>
+                </div>
+
+                <div class='col col-50'>
+                    <div class='row'>
+                        <div class='col col-50'><a class='button icon-left ion-headphone'></a></div>
+                        <div class='col col-50'><a class='button icon-left ion-speakerphone'></a></div>
+                    </div>
+                     <div class='row'>
+                        <div class='col col-50'><a class='button icon-left ion-android-microphone'></a></div>
+                        <div class='col col-50'><a class='button icon-left ion-android-microphone-off'></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   
+    <div class="bar bar-header">
+        <h1 class='title'>指定列相对偏移位置</h1>
+    </div>
+    <div class='scroll-content has-header'>
+        <div class='row'>
+            <div class='col col-33 col-offset-33' style='border:solid 1px red'></div>
+            <div class='col' style='border:solid 1px red'>.col</div>
+        </div>
+
+        <div class='row'>
+            <div class='col col-33' style='border:solid 1px red'>.col</div>
+            <div class='col col-33 col-offset-33' style='border:solid 1px red'>.col-offset-33</div>
+        </div>
+
+        <div class='row'>
+            <div class='col col-33 col-offset-67' style='border:solid 1px red'>.col-offset-67</div>
+        </div>
+    </div>
+     -->
+    <div class='bar bar-header'>
+        <h1>纵轴对齐方式</h1>
+    </div>
+
+    <div class='scroll-content has-header'>
+
+        <div class='row'>
+            <div class='col' style='border:solid 1px red;'>.col</div>
+            <div class='col' style='border:solid 1px red;'>.col</div>
+            <div class='col' style='border:solid 1px red;'>.col</div>
+            <div class='col' style='border:solid 1px red;'>1<br />2<br />3<br />4<br /></div>
+        </div>
+
+
+        <div class='row'>
+            <div class='col col-top' style='border:solid 1px red;'>.col-top</div>
+            <div class='col col-center' style='border:solid 1px red;'>.col-center</div>
+            <div class='col col-bottom' style='border:solid 1px red;'>.col-bottom</div>
+            <div class='col' style='border:solid 1px red;'>1<br />2<br />3<br />4<br /></div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+outer content
+
+
+  </body>
+</html>
